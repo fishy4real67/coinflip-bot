@@ -140,9 +140,10 @@ async def coinflip(interaction: discord.Interaction, opponent: discord.Member, w
 
     view = AcceptView(opponent)
     await interaction.response.send_message(
-    content=f"{opponent.mention}, you have a coinflip request!",
+    content="something",
     embed=embed,
     view=view
+)
     msg = await interaction.original_response()
 
     await view.wait()
